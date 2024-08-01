@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Genshin Impact",
+    "img": "genshin.jpeg",
+    "items": "1090 Genesis Crystals",
+    "price": 299000,
+    "hot_promo": 159500
+  },
+  {
+    "id": 2,
+    "name": "Mobile Legends",
+    "img": "mobile-legend.jpeg",
+    "items": "8080 Diamonds",
+    "price": 1549000,
+    "hot_promo": 1295000
+  },
+  {
+    "id": 3,
+    "name": "Genshin Impact",
+    "img": "genshin.jpeg",
+    "items": "2240 Genesis Crystals",
+    "price": 599000,
+    "hot_promo": 393500
+  },
+  {
+    "id": 4,
+    "name": "Wuhtering Waves",
+    "img": "wuwe.jpeg",
+    "items": "3880 Astrite",
+    "price": 867000,
+    "hot_promo": 689500
+  },
+  {
+    "id": 5,
+    "name": "Genshin Impact",
+    "img": "genshin.jpeg",
+    "items": "330 Genesis Crystals",
+    "price": 87000,
+    "hot_promo": 69900
+  }
+]
