@@ -1,6 +1,6 @@
 <template>
-  <div class="w-screen bg-[#12182C]">
-    <nav class="h-20 flex justify-between items-center px-32 bg-[#162140] z-50">
+  <div class="w-screen bg-[#12182C] overflow-hidden">
+    <nav class="w-full h-20 flex justify-between items-center px-32 bg-[#162140] z-50">
       <div class="h-full w-[58%] flex justify-between items-center ">
         <div
           class="h-full w-32 bg-cover bg-center"
@@ -62,7 +62,7 @@
         </div>
       </div>
     </nav>
-    <div >
+    <div class="w-full h-auto">
       <NuxtPage />
     </div>
   </div>

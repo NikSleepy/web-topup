@@ -1,22 +1,29 @@
 <template>
-  <div class="w-full h-auto flex flex-col px-32">
-    <div class="flex items-center gap-4 text-white">
+  <div class="w-full flex flex-col px-32">
+    <div class="w-full flex justify-start items-center gap-4 text-white ">
         <font-awesome-icon :icon="['fas', 'gamepad']"  size="3x" color="#FDE047"/>
         <p class="text-3xl font-bold">All Game</p>
     </div>
 
-    <div class="flex flex-col gap-4 px-2 py-6 text-white">
-      <div class="w-32 h-auto flex flex-col items-center gap-2">
+    <div class="w-full flex flex-wrap  gap-4 py-6 text-white bg-red-500">
+      <div class="w-44 h-auto flex flex-col items-center gap-2" v-for="item in data">
         <img
-          src="/icons/wuwe.jpeg"
+          :src="`/icons/${item.img}`"
           alt="wuwe"
           class="w-full h-full bg-cover bg-center rounded-md"
         />
-        <p>Wuwe</p>
+        <p>{{  item.name  }}</p>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+import data from '@/mocks/games.json'
+export default {
+  data() {
+    return {
+      data
+    }
+  }
+};
 </script>

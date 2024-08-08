@@ -23,7 +23,7 @@
     @slideChange="onSlideChange"
     style="padding-top: 50px; padding-bottom: 50px; width: 100%"
   >
-    <SwiperSlide v-for="(image, index) in images" :key="index">
+    <SwiperSlide v-for="(image, index) in images" :key="index" >
       <img :src="image" alt="" class="block w-full rounded-lg zoomed" />
     </SwiperSlide>
   </Swiper>

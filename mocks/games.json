@@ -6,22 +6,62 @@
     },
     {
         "id": 2,
-        "name": "Genshin Impact",
-        "img": "genshin.jpeg"
+        "name": "Wuthering Waves",
+        "img": "wuwe.jpeg"
     },
     {
         "id": 3,
-        "name": "Genshin Impact",
-        "img": "genshin.jpeg"
+        "name": "Mobile Legends",
+        "img": "mobile-legend.jpeg"
     },
     {
         "id": 4,
-        "name": "Genshin Impact",
-        "img": "genshin.jpeg"
+        "name": "Honkai Star Rail",
+        "img": "hsr.jpeg"
     },
     {
         "id": 5,
-        "name": "Genshin Impact",
-        "img": "genshin.jpeg"
+        "name": "Call Of Duty",
+        "img": "codm.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Free Fire",
+        "img": "ff.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "PUBG",
+        "img": "pubg.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Honor Of Kings",
+        "img": "hok.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "Language Of Legend",
+        "img": "lol.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "Honkai Impact",
+        "img": "honkai-impact.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Valorant",
+        "img": "valorant.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "Zenless Zone Zero",
+        "img": "zzz.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Solo Leveling",
+        "img": "solo-leveling.jpeg"
     }
 ]
