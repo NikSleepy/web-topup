@@ -5,9 +5,9 @@
       <p class="text-3xl font-bold">All Game</p>
     </div>
 
-    <div class="flex flex-wrap gap-4 py-6 px-2 text-white">
+    <div class="flex flex-wrap justify-center gap-4 py-6 px-2 text-white ">
       <div
-        class="w-44 h-auto flex flex-col items-center gap-2"
+        class="w-44 h-auto flex flex-col justify-center items-center  gap-4"
         v-for="item in data"
         @click="orderGame(item.id)"
       >

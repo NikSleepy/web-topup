@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "name": "Genshin Impact",
+    "img": "genshin.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "type": "text",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "name":"category",
+        "category": [
+          {
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "selections": [
+              {
+                "img": "Blessing.png",
+                "name": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "name": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "name": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          }, 
+          {
+            "img": "crystal.png",
+            "name": "Crystal",
+            "selections": [
+              {
+                "img": "crystal.png",
+                "name": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "name": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "name": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "name": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "name": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label":"Jumlah Pembelian",
+        "inputs": {
+            "quantity": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+        }
+      },
+      {
+        "no": 4,
+        "label":"Nomor Whatsapp",
+        "inputs": {
+            "quantity": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+        }
+      },
+      {
+        "no": 5,
+        "label":"Metode Pembayaran",
+        "category": [
+            {
+                "name": "QR Code",
+                "categorys": [
+                    {
+                        "name": "QRIS"
+                    }
+                ]
+            },
+            {
+                "name": "E-Wallet",
+                "categorys": [
+                    {
+                        "name": "Dana"
+                    },
+                    {
+                        "name": "OVO"
+                    }
+                ]
+            },
+            {
+                "name": "Virtual Account",
+                "categorys": [
+                    {
+                        "name": "BCA"
+                    },
+                    {
+                        "name": "BNI"
+                    },
+                    {
+                        "name": "Mandiri"
+                    },
+                    {
+                        "name": "Permata"
+                    }
+                ]
+            },
+            {
+                "name": "Retail Outlet",
+                "categorys": [
+                    {
+                        "name": "Indomaret"
+                    },
+                    {
+                        "name": "Alfamart"
+                    }
+                ]
+
+            }   
+        ]
+      }
+    ]
+  }
+]
