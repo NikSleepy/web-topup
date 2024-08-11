@@ -7,17 +7,16 @@
       {
         "no": 1,
         "label": "Silahkan Masukan UID",
+        "type": "text",
         "inputs": [
           {
             "id": "uid",
             "placeholder": "User ID",
-            "type": "text",
             "required": true
           },
           {
             "id": "server",
             "placeholder": "Server",
-            "type": "text",
             "required": true
           }
         ]
@@ -25,12 +24,13 @@
       {
         "no": 2,
         "label": "Silahkan Pilih Kategori & Item",
-        "name":"category",
-        "category": [
+        "type": "sections",
+        "inputs": [
           {
+            "id": "category",
             "img": "Blessing.png",
             "name": "Blessing Welkin Moon",
-            "selections": [
+            "options": [
               {
                 "img": "Blessing.png",
                 "name": "Blessing Welkin Moon",
@@ -47,11 +47,12 @@
                 "price": 195000
               }
             ]
-          }, 
+          },
           {
+            "id": "category",
             "img": "crystal.png",
             "name": "Crystal",
-            "selections": [
+            "options": [
               {
                 "img": "crystal.png",
                 "name": "60 Crystal",
@@ -83,76 +84,82 @@
       },
       {
         "no": 3,
-        "label":"Jumlah Pembelian",
-        "inputs": {
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
             "quantity": "quantity",
             "placeholder": "Jumlah Item",
             "type": "number",
             "required": true
-        }
+          }
+        ]
       },
       {
         "no": 4,
-        "label":"Nomor Whatsapp",
-        "inputs": {
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
             "quantity": "quantity",
             "placeholder": "Jumlah Item",
             "type": "number",
             "required": true
-        }
+          }
+        ]
       },
       {
         "no": 5,
-        "label":"Metode Pembayaran",
-        "category": [
-            {
-                "name": "QR Code",
-                "categorys": [
-                    {
-                        "name": "QRIS"
-                    }
-                ]
-            },
-            {
-                "name": "E-Wallet",
-                "categorys": [
-                    {
-                        "name": "Dana"
-                    },
-                    {
-                        "name": "OVO"
-                    }
-                ]
-            },
-            {
-                "name": "Virtual Account",
-                "categorys": [
-                    {
-                        "name": "BCA"
-                    },
-                    {
-                        "name": "BNI"
-                    },
-                    {
-                        "name": "Mandiri"
-                    },
-                    {
-                        "name": "Permata"
-                    }
-                ]
-            },
-            {
-                "name": "Retail Outlet",
-                "categorys": [
-                    {
-                        "name": "Indomaret"
-                    },
-                    {
-                        "name": "Alfamart"
-                    }
-                ]
-
-            }   
+        "label": "Metode Pembayaran",
+        "type": "select",
+        "inputs": [
+          {
+            "name": "QR Code",
+            "options": [
+              {
+                "name": "QRIS"
+              }
+            ]
+          },
+          {
+            "name": "E-Wallet",
+            "options": [
+              {
+                "name": "Dana"
+              },
+              {
+                "name": "OVO"
+              }
+            ]
+          },
+          {
+            "name": "Virtual Account",
+            "options": [
+              {
+                "name": "BCA"
+              },
+              {
+                "name": "BNI"
+              },
+              {
+                "name": "Mandiri"
+              },
+              {
+                "name": "Permata"
+              }
+            ]
+          },
+          {
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "name": "Indomaret"
+              },
+              {
+                "name": "Alfamart"
+              }
+            ]
+          }
         ]
       }
     ]
