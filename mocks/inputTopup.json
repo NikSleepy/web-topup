@@ -27,55 +27,55 @@
         "type": "sections",
         "inputs": [
           {
-            "id": "category",
+            "id": "blessing",
             "img": "Blessing.png",
             "name": "Blessing Welkin Moon",
             "options": [
               {
                 "img": "Blessing.png",
-                "name": "Blessing Welkin Moon",
+                "value": "Blessing Welkin Moon",
                 "price": 65000
               },
               {
                 "img": "Blessing.png",
-                "name": "Blessing Welkin Moon 2x",
+                "value": "Blessing Welkin Moon 2x",
                 "price": 130000
               },
               {
                 "img": "Blessing.png",
-                "name": "Blessing Welkin Moon 3x",
+                "value": "Blessing Welkin Moon 3x",
                 "price": 195000
               }
             ]
           },
           {
-            "id": "category",
+            "id": "crystal",
             "img": "crystal.png",
             "name": "Crystal",
             "options": [
               {
                 "img": "crystal.png",
-                "name": "60 Crystal",
+                "value": "60 Crystal",
                 "price": 13000
               },
               {
                 "img": "crystal.png",
-                "name": "300 + 30 Crystal",
+                "value": "300 + 30 Crystal",
                 "price": 65000
               },
               {
                 "img": "crystal.png",
-                "name": "980 + 110 Crystal",
+                "value": "980 + 110 Crystal",
                 "price": 205000
               },
               {
                 "img": "crystal.png",
-                "name": "1980 + 260 Crystal",
+                "value": "1980 + 260 Crystal",
                 "price": 410000
               },
               {
                 "img": "crystal.png",
-                "name": "3280 + 460 Crystal",
+                "value": "3280 + 460 Crystal",
                 "price": 640000
               }
             ]
@@ -88,7 +88,7 @@
         "type": "number",
         "inputs": [
           {
-            "quantity": "quantity",
+            "id": "quantity",
             "placeholder": "Jumlah Item",
             "type": "number",
             "required": true
@@ -101,8 +101,8 @@
         "type": "text",
         "inputs": [
           {
-            "quantity": "quantity",
-            "placeholder": "Jumlah Item",
+            "id": "whatsapp",
+            "placeholder": "+62812xxxxxxx",
             "type": "number",
             "required": true
           }
@@ -111,52 +111,56 @@
       {
         "no": 5,
         "label": "Metode Pembayaran",
-        "type": "select",
+        "type": "sections",
         "inputs": [
           {
+            "id": "qrcode",
             "name": "QR Code",
             "options": [
               {
-                "name": "QRIS"
+                "value": "QRIS"
               }
             ]
           },
           {
+            "id": "ewallet",
             "name": "E-Wallet",
             "options": [
               {
-                "name": "Dana"
+                "value": "Dana"
               },
               {
-                "name": "OVO"
+                "value": "OVO"
               }
             ]
           },
           {
+            "id": "virtual_account",
             "name": "Virtual Account",
             "options": [
               {
-                "name": "BCA"
+                "value": "BCA"
               },
               {
-                "name": "BNI"
+                "value": "BNI"
               },
               {
-                "name": "Mandiri"
+                "value": "Mandiri"
               },
               {
-                "name": "Permata"
+                "value": "Permata"
               }
             ]
           },
           {
+            "id": "retail",
             "name": "Retail Outlet",
             "options": [
               {
-                "name": "Indomaret"
+                "value": "Indomaret"
               },
               {
-                "name": "Alfamart"
+                "value": "Alfamart"
               }
             ]
           }
