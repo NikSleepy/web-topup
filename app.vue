@@ -32,30 +32,35 @@
 
         <div class="relative">
           <img
+          v-show="!dropdownOpen"
             @click="toggleDropdown"
             src="/img/foto-me.jpg"
             alt="Profile"
             class="h-10 w-10 rounded-full cursor-pointer"
           />
+
+          <div v-show="dropdownOpen" class="h-10 w-10 rounded-full cursor-pointer" @click="toggleDropdown">
+            <XMarkIcon/>
+          </div>
           <div
             v-if="dropdownOpen"
-            class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
+            class="absolute right-0 mt-2 w-48 bg-[#20305d] text-white  rounded-lg shadow-lg py-2 z-50"
           >
             <a
               href="#"
-              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              class="block px-4 py-2  hover:bg-white hover:text-[#162140]"
               @click="goToProfile"
               >Profil</a
             >
             <a
               href="#"
-              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              class="block px-4 py-2  hover:bg-white hover:text-[#162140]"
               @click="goToOrderHistory"
               >Riwayat Pesanan</a
             >
             <a
               href="#"
-              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              class="block px-4 py-2  hover:bg-white hover:text-[#162140]"
               @click="logout"
               >Logout</a
             >
@@ -74,8 +79,9 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { HomeModernIcon } from '@heroicons/vue/24/solid';
+import { HomeModernIcon, XMarkIcon } from '@heroicons/vue/24/solid';
 import { MagnifyingGlassIcon } from '@heroicons/vue/24/outline';
+import { XCircleIcon } from '@heroicons/vue/24/solid';
 const dropdownOpen = ref(false);
 const router = useRouter();
 
