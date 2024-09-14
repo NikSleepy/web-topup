@@ -1,9 +1,36 @@
 <template>
   <div class="w-full flex justify-between px-32 pb-6 text-white">
     <div class="w-[40%] h-auto">
-      <div>{{ formData }}</div>
+      <div
+        class="w-full h-auto flex flex-col items-center px-4 gap-4 bg-[#3B4158] mt-4 rounded-md py-6"
+      >
+        <img
+          :src="`/icons/${item.img}`"
+          alt="icon"
+          class="w-[60%] h-auto rounded-md"
+        />
+
+        <div class="w-full h-auto flex flex-col items-center gap-4">
+          <p class="text-3xl font-bold">{{ item.name }}</p>
+
+          <p class="w-[85%] text-justify text-md md:text-lg">
+            NikTop hadir sebagai solusi terpercaya untuk top-up game favoritmu.
+            Dengan proses yang cepat dan aman, kamu bisa mendapatkan diamond
+            atau voucher game hanya dengan beberapa langkah mudah. Di NikTop,
+            kami menawarkan harga yang terjangkau serta berbagai metode
+            pembayaran untuk kenyamananmu. Selain itu, selama bulan ini, kamu
+            bisa menikmati promo spesial dengan bonus diamond dan diskon hingga
+            20% pada setiap transaksi top-up. Jangan lewatkan kesempatan ini
+            untuk meningkatkan pengalaman bermain game kamu dengan lebih seru
+            dan praktis. Segera top-up di NikTop dan nikmati layanan terbaik
+            dari kami!
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="w-[55%] flex flex-col p-4 items-center justify-center gap-6">
+    <div
+      class="w-[55%] flex flex-col p-4 items-center justify-center gap-6"
+    >
       <div
         v-for="label in item.orders"
         class="w-full h-auto flex flex-col bg-[#3B4158] p-6 gap-5 rounded-md"
@@ -66,53 +93,96 @@
         </div>
 
         <!-- payment input -->
-        <div v-else class="flex flex-col gap-4 h-auto ">
-          <div v-for="input in label.inputs" class="w-full h-auto flex flex-wrap gap-2 ">
-              <div
-                class="w-[60%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
-                :class="{
-                  'border-blue-500': topup['type_payment'] === input,
-                }"
-                :key="input.id"
-                @click="topup['type_payment'] = input"
-              >
-                <p>{{ input.name }}</p>
-              </div>
+        <div v-else class="flex flex-col gap-4 h-auto">
+          <div
+            v-for="input in label.inputs"
+            class="w-full h-auto flex flex-wrap gap-2"
+          >
+            <div
+              class="w-[60%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
+              :class="{
+                'border-blue-500': topup['type_payment'] === input,
+              }"
+              :key="input.id"
+              @click="topup['type_payment'] = input"
+            >
+              <p>{{ input.name }}</p>
+            </div>
 
+            <div
+              v-show="topup['type_payment'] === input"
+              class="w-full h-auto flex flex-wrap gap-4 px-4"
+            >
               <div
-                v-show="topup['type_payment'] === input"
-                class="w-full h-auto flex flex-wrap gap-4 px-4"
+                v-for="option in topup.type_payment?.options"
+                class="w-[20%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
+                :class="{
+                  'border-blue-500': formData['payment'] === option.value,
+                }"
+                :key="option.id"
+                @click="formData['payment'] = option.value"
               >
-                <div
-                  v-for="option in topup.type_payment?.options"
-                  class="w-[20%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
-                  :class="{
-                    'border-blue-500': formData['payment'] === option.value,
-                  }"
-                  :key="option.id"
-                  @click="formData['payment'] = option.value"
-                >
-                  <p>{{ option.value }}</p>
-                </div>
+                <p>{{ option.value }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <p v-if="errorMessages" class="text-red-500">
+        {{ errorMessages }}
+      </p>
+
+      <div class="w-full flex justify-end">
+        <button
+          class="w-[60%] h-10 flex justify-center items-center bg-yellow-400 rounded-md"
+          @click="openModal"
+        >
+          Order
+        </button>
+      </div>
     </div>
+
+    <!-- Modal -->
+    <div
+      v-if="isModalOpen"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+    >
+      <div class="bg-yellow-400 text-black p-6 rounded-lg shadow-lg w-[50%]">
+        <h2 class="text-2xl font-bold mb-4">Order Confirmation</h2>
+        <ul class="mb-4">
+          <li v-for="(value, key) in formData" :key="key" class="text-lg">
+            <strong>{{ key }}:</strong> {{ value }}
+          </li>
+        </ul>
+        <div class="flex justify-end gap-4">
+          <button @click="closeModal" class="bg-red-500 text-white px-4 py-2 rounded-md">
+            Close
+          </button>
+          <button @click="order" class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
 import data from '@/mocks/inputTopup.json';
+import { errorMessages } from 'vue/compiler-sfc';
 
 export default {
   data() {
     return {
       item: {},
       index: null,
+      isModalOpen: false,
       formData: {},
       selectedCategory: {},
       topup: {},
+      errorMessages:'',
     };
   },
   mounted() {
@@ -141,5 +211,39 @@ export default {
       },
     },
   },
+  methods: {
+    openModal() {
+
+      if(!this.validateForm()) {
+        this.errorMessages = 'Please fill in all required fields';
+        return;
+      }
+      
+      this.errorMessages = '';
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
+    },
+    order() {
+      this.isModalOpen = false;
+      this.$router.push('/');
+    },
+    validateForm() {
+      // Cek apakah input di formData kosong
+      for (let key in this.formData) {
+        if (!this.formData[key]) {
+          return false; // Jika ada input yang kosong, return false
+        }
+      }
+
+      // Cek apakah 'item' dan 'payment' sudah dipilih
+      if (!this.formData['item'] || !this.formData['payment']) {
+        return false;
+      }
+
+      return true; // Semua input terisi
+    },
+  }
 };
 </script>
