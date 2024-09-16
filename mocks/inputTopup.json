@@ -167,5 +167,343 @@
         ]
       }
     ]
+  },
+  {
+    "id": 2,
+    "name": "Wuthering Waves",
+    "img": "wuwe.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mobile legend",
+    "img": "mobile-legend.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
