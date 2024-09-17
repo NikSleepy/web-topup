@@ -1,12 +1,13 @@
 <template>
   <div class="w-screen bg-[#12182C] overflow-hidden">
     <nav
-      class="w-full h-20 flex justify-between items-center px-32 bg-[#162140] z-50 "
+      class="w-full h-20 flex justify-between items-center px-32 bg-[#162140] z-50"
     >
       <div class="h-full w-[58%] flex justify-between items-center">
         <div
-          class="h-full w-32 bg-cover bg-center"
+          class="h-full w-32 bg-cover bg-center cursor-pointer"
           style="background-image: url('/img/logo-topup.png')"
+          @click="goToHome"
         ></div>
         <div class="w-3/4 h-full py-4">
           <input
@@ -32,35 +33,39 @@
 
         <div class="relative">
           <img
-          v-show="!dropdownOpen"
+            v-show="!dropdownOpen"
             @click="toggleDropdown"
             src="/img/foto-me.jpg"
             alt="Profile"
             class="h-10 w-10 rounded-full cursor-pointer"
           />
 
-          <div v-show="dropdownOpen" class="h-10 w-10 rounded-full cursor-pointer" @click="toggleDropdown">
-            <XMarkIcon/>
+          <div
+            v-show="dropdownOpen"
+            class="h-10 w-10 rounded-full cursor-pointer"
+            @click="toggleDropdown"
+          >
+            <XMarkIcon />
           </div>
           <div
             v-if="dropdownOpen"
-            class="absolute right-0 mt-2 w-48 bg-[#20305d] text-white  rounded-lg shadow-lg py-2 z-50"
+            class="absolute right-0 mt-2 w-48 bg-[#20305d] text-white rounded-lg shadow-lg py-2 z-50"
           >
             <a
               href="#"
-              class="block px-4 py-2  hover:bg-white hover:text-[#162140]"
+              class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
               @click="goToProfile"
               >Profil</a
             >
             <a
               href="#"
-              class="block px-4 py-2  hover:bg-white hover:text-[#162140]"
+              class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
               @click="goToOrderHistory"
               >Riwayat Pesanan</a
             >
             <a
               href="#"
-              class="block px-4 py-2  hover:bg-white hover:text-[#162140]"
+              class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
               @click="logout"
               >Logout</a
             >
@@ -101,5 +106,9 @@ const goToOrderHistory = () => {
 const logout = () => {
   dropdownOpen.value = false;
   // Tambahkan logika logout di sini
+};
+
+const goToHome = () => {
+  router.push('/');
 };
 </script>

@@ -198,6 +198,395 @@
           {
             "id": 1,
             "img": "Blessing.png",
+            "name": "Battle Pass",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Insider Channel",
+                "price": 144500
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Upgrade Connoiseur Channel (Harus memiliki Insider Channel)",
+                "price": 159000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Lunite",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Lunite",
+                "price": 20000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 Lunite",
+                "price": 73000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 Lunite",
+                "price": 220000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 Lunite",
+                "price": 439500
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 Lunite",
+                "price": 690500
+              }
+            ]
+          },          {
+            "id": 3,
+            "img": "Blessing.png",
+            "name": "Lunites Subscription",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Lunites Subscription",
+                "price": 75000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Lunites Subscription 2x",
+                "price": 149500
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Lunites Subscription 3x",
+                "price": 219500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mobile legend",
+    "img": "mobile-legend.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Twilight Pass",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Twilight Pass",
+                "price": 152000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Twilight Pass 2x",
+                "price": 304000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Diamonds",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "5 Diamonds",
+                "price": 1400
+              },
+              {
+                "img": "crystal.png",
+                "value": "10 Diamonds",
+                "price": 3100
+              },
+              {
+                "img": "crystal.png",
+                "value": "12 Diamonds",
+                "price": 3500
+              },
+              {
+                "img": "crystal.png",
+                "value": "28 Diamonds",
+                "price": 8100
+              },
+              {
+                "img": "crystal.png",
+                "value": "44 Diamonds",
+                "price": 12500
+              },
+              {
+                "img": "crystal.png",
+                "value": "113 Diamonds",
+                "price": 31200
+              },
+              {
+                "img": "crystal.png",
+                "value": "170 Diamonds",
+                "price": 47500
+              },
+              {
+                "img": "crystal.png",
+                "value": "296 Diamonds",
+                "price": 81200
+              },
+              {
+                "img": "crystal.png",
+                "value": "381 Diamonds",
+                "price": 106100
+              },
+              {
+                "img": "crystal.png",
+                "value": "568 Diamonds",
+                "price": 152000
+              },
+              {
+                "img": "crystal.png",
+                "value": "750 Diamonds",
+                "price": 210400
+              },
+              {
+                "img": "crystal.png",
+                "value": "1164 Diamonds",
+                "price": 312700
+              },
+              {
+                "img": "crystal.png",
+                "value": "2382 Diamonds",
+                "price": 612400
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Honkai Star Rail",
+    "img": "hsr.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
             "name": "Blessing Welkin Moon",
             "options": [
               {
@@ -338,9 +727,1361 @@
     ]
   },
   {
-    "id": 3,
-    "name": "Mobile legend",
-    "img": "mobile-legend.jpeg",
+    "id": 5,
+    "name": "Call Of Duty",
+    "img": "codm.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Free Fire",
+    "img": "ff.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "PUBG",
+    "img": "pubg.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Honor Of Kings",
+    "img": "hok.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Language Of Legends",
+    "img": "lol.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Honkai Impact",
+    "img": "honkai-impact.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Valorant",
+    "img": "valorant.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Zenless Zone Zero",
+    "img": "zzz.jpeg",
+    "orders": [
+      {
+        "no": 1,
+        "label": "Silahkan Masukan UID",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "uid",
+            "placeholder": "User ID",
+            "required": true
+          },
+          {
+            "id": "server",
+            "placeholder": "Server",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "label": "Silahkan Pilih Kategori & Item",
+        "type": "sections",
+        "inputs": [
+          {
+            "id": 1,
+            "img": "Blessing.png",
+            "name": "Blessing Welkin Moon",
+            "options": [
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon",
+                "price": 65000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 2x",
+                "price": 130000
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Blessing Welkin Moon 3x",
+                "price": 195000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "crystal.png",
+            "name": "Crystal",
+            "options": [
+              {
+                "img": "crystal.png",
+                "value": "60 Crystal",
+                "price": 13000
+              },
+              {
+                "img": "crystal.png",
+                "value": "300 + 30 Crystal",
+                "price": 65000
+              },
+              {
+                "img": "crystal.png",
+                "value": "980 + 110 Crystal",
+                "price": 205000
+              },
+              {
+                "img": "crystal.png",
+                "value": "1980 + 260 Crystal",
+                "price": 410000
+              },
+              {
+                "img": "crystal.png",
+                "value": "3280 + 460 Crystal",
+                "price": 640000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "label": "Jumlah Pembelian",
+        "type": "number",
+        "inputs": [
+          {
+            "id": "quantity",
+            "placeholder": "Jumlah Item",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "label": "Nomor Whatsapp",
+        "type": "text",
+        "inputs": [
+          {
+            "id": "whatsapp",
+            "placeholder": "+628xxxxxxx / 08xxxxxxx",
+            "type": "number",
+            "required": true
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "label": "Metode Pembayaran",
+        "type": "payments",
+        "inputs": [
+          {
+            "id": "metode_pembayaran",
+            "name": "QR Code",
+            "options": [
+              {
+                "value": "QRIS"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "E-Wallet",
+            "options": [
+              {
+                "value": "Dana"
+              },
+              {
+                "value": "OVO"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Virtual Account",
+            "options": [
+              {
+                "value": "BCA"
+              },
+              {
+                "value": "BNI"
+              },
+              {
+                "value": "Mandiri"
+              },
+              {
+                "value": "Permata"
+              }
+            ]
+          },
+          {
+            "id": "metode_pembayaran",
+            "name": "Retail Outlet",
+            "options": [
+              {
+                "value": "Indomaret"
+              },
+              {
+                "value": "Alfamart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Solo Leveling",
+    "img": "solo-leveling.jpeg",
     "orders": [
       {
         "no": 1,
