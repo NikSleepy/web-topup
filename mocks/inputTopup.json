@@ -243,7 +243,8 @@
                 "price": 690500
               }
             ]
-          },          {
+          },
+          {
             "id": 3,
             "img": "Blessing.png",
             "name": "Lunites Subscription",
@@ -587,54 +588,54 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "Express Supply Pass",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "Express Supply Pass",
+                "price": 64000
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
+                "value": "Express Supply Pass 2x",
+                "price": 126000
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
+                "value": "Express Supply Pass 3x",
+                "price": 190500
               }
             ]
           },
           {
             "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Oneiric Shards",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "60 Oneiric Shards",
+                "price": 14000
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "300 + 30 Oneiric Shards",
+                "price": 64000
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "980 + 110 Oneiric Shards",
+                "price": 190000
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "1980 + 260  Oneiric Shards",
+                "price": 413000
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "3280 + 460 Oneiric Shards",
+                "price": 636000
               }
             ]
           }
@@ -755,55 +756,33 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
-            "options": [
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
-              }
-            ]
-          },
-          {
-            "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Cp",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "63 Cp",
+                "price": 10500
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "321 Cp",
+                "price": 51700
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "654 Cp",
+                "price": 106700
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "1308 Cp",
+                "price": 206000
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "3280 Cp",
+                "price": 517800
               }
             ]
           }
@@ -925,54 +904,84 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "Membership",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "Level Up Pass",
+                "price": 14500
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
+                "value": "Mingguan Membership",
+                "price": 26900
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
+                "value": "Bulanan Membership",
+                "price": 80600
               }
             ]
           },
           {
             "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Diamonds",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "5 Diamonds",
+                "price": 800
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "10 Diamonds",
+                "price": 1700
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "12 Diamonds",
+                "price": 2000
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "70 Diamonds",
+                "price": 8100
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "144 Diamonds",
+                "price": 19500
+              },
+              {
+                "img": "crystal.png",
+                "value": "190 Diamonds",
+                "price": 28400
+              },
+              {
+                "img": "crystal.png",
+                "value": "355 Diamonds",
+                "price": 46600
+              },
+              {
+                "img": "crystal.png",
+                "value": "565 Diamonds",
+                "price": 71800
+              },
+              {
+                "img": "crystal.png",
+                "value": "750 Diamonds",
+                "price": 96500
+              },
+              {
+                "img": "crystal.png",
+                "value": "1164 Diamonds",
+                "price": 130700
+              },
+              {
+                "img": "crystal.png",
+                "value": "2382 Diamonds",
+                "price": 245500
               }
             ]
           }
@@ -1094,54 +1103,59 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "Upgrade Rp",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "Upgrade Rp",
+                "price": 149700
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
+                "value": "Upgrade Elite Rp",
+                "price": 383400
               }
             ]
           },
           {
             "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "UC",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "30 UC",
+                "price": 6500
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "60 UC",
+                "price": 13400
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "210 UC",
+                "price": 46500
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "360 + 20 UC",
+                "price": 80200
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "660 + 40 UC",
+                "price": 144700
+              },
+              {
+                "img": "crystal.png",
+                "value": "900 + 60 UC",
+                "price": 200600
+              },
+              {
+                "img": "crystal.png",
+                "value": "1500 + 80 UC",
+                "price": 334700
               }
             ]
           }
@@ -1263,54 +1277,49 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "Weekly Card",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "Weekly Card",
+                "price": 14000
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
+                "value": "Weekly Card Plus",
+                "price": 41300
               }
             ]
           },
           {
             "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Tokens",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "8 Tokens",
+                "price": 1300
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "23 + 3 Tokens",
+                "price": 3900
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "80 + 20 Tokens",
+                "price": 16000
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "240 + 17 Tokens",
+                "price": 44000
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "560 + 40 Tokens",
+                "price": 99700
               }
             ]
           }
@@ -1431,55 +1440,33 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
-            "options": [
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
-              }
-            ]
-          },
-          {
-            "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Wildcores",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "100 Wildcores",
+                "price": 14500
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "305 + 50 Wildcores",
+                "price": 65900
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "586 + 100 Wildcores",
+                "price": 101100
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "1100 Wildcores",
+                "price": 154000
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "3100 + 100 Wildcores",
+                "price": 387900
               }
             ]
           }
