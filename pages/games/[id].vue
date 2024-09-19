@@ -26,11 +26,11 @@
             dari kami!
           </p>
         </div>
+
+        <div>{{ formData }}</div>
       </div>
     </div>
-    <div
-      class="w-[55%] flex flex-col p-4 items-center justify-center gap-6"
-    >
+    <div class="w-[55%] flex flex-col p-4 items-center justify-center gap-6">
       <div
         v-for="label in item.orders"
         class="w-full h-auto flex flex-col bg-[#3B4158] p-6 gap-5 rounded-md"
@@ -85,7 +85,7 @@
                 'border-blue-500': formData['item'] === option.value,
               }"
               :key="option.id"
-              @click="formData['item'] = option.value"
+              @click="inputItem(option)"
             >
               <p>{{ option.value }}</p>
             </div>
@@ -151,27 +151,36 @@
       <div class="bg-yellow-400 text-black p-6 rounded-lg shadow-lg w-[50%]">
         <h2 class="text-2xl font-bold mb-4">Order Confirmation</h2>
         <ul class="mb-4">
-          <li v-for="(value, key) in formData" :key="key" class="text-lg">
-            <strong>{{ key }}:</strong> {{ value }}
-          </li>
+          <li><strong>UID:</strong> {{ formData['uid'] }}</li>
+          <li><strong>Server:</strong> {{ formData['server'] }}</li>
+          <li><strong>Name:</strong> {{ formData['item'] }}</li>
+          <li><strong>Price:</strong> {{ numberToRupiah(formData['price']) }}</li>
+          <li><strong>Whatsapp:</strong> {{ formData['whatsapp'] }}</li>
+          <li><strong>Methods Payment:</strong> {{ formData['payment'] }}</li>
+          <li><strong>Total:</strong> {{ numberToRupiah(totalPrice()) }}</li>
         </ul>
         <div class="flex justify-end gap-4">
-          <button @click="closeModal" class="bg-red-500 text-white px-4 py-2 rounded-md">
+          <button
+            @click="closeModal"
+            class="bg-red-500 text-white px-4 py-2 rounded-md"
+          >
             Close
           </button>
-          <button @click="order" class="bg-blue-500 text-white px-4 py-2 rounded-md">
+          <button
+            @click="order"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md"
+          >
             Order Now
           </button>
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 import data from '@/mocks/inputTopup.json';
-import { errorMessages } from 'vue/compiler-sfc';
+import { numberToRupiah } from '~/utils/currency'; 
 
 export default {
   data() {
@@ -182,7 +191,7 @@ export default {
       formData: {},
       selectedCategory: {},
       topup: {},
-      errorMessages:'',
+      errorMessages: '',
     };
   },
   mounted() {
@@ -212,13 +221,22 @@ export default {
     },
   },
   methods: {
+    inputItem(options) {
+      this.formData['item'] = options.value;
+      this.formData['price'] = options.price;
+    },
+    totalPrice() {
+      const price = this.formData['price'];
+      const quantity = this.formData['quantity'];
+      const total = price * quantity;
+      return total;
+    },
     openModal() {
-
-      if(!this.validateForm()) {
+      if (!this.validateForm()) {
         this.errorMessages = 'Please fill in all required fields';
         return;
       }
-      
+
       this.errorMessages = '';
       this.isModalOpen = true;
     },
@@ -244,6 +262,6 @@ export default {
 
       return true; // Semua input terisi
     },
-  }
+  },
 };
 </script>

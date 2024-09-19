@@ -1588,54 +1588,59 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "B Chips",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "65 B Chips",
+                "price": 17600
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
+                "value": "330 + 65 B Chips",
+                "price": 97900
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
+                "value": "710 + 65 B Chips",
+                "price": 183200
+              },
+              {
+                "img": "Blessing.png",
+                "value": "1520 + 65 B Chips",
+                "price": 345600
               }
             ]
           },
           {
             "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Crystals",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "60 Crystals",
+                "price": 17000
               },
               {
                 "img": "crystal.png",
                 "value": "300 + 30 Crystal",
-                "price": 65000
+                "price": 65100
               },
               {
                 "img": "crystal.png",
                 "value": "980 + 110 Crystal",
-                "price": 205000
+                "price": 206000
               },
               {
                 "img": "crystal.png",
                 "value": "1980 + 260 Crystal",
-                "price": 410000
+                "price": 415400
               },
               {
                 "img": "crystal.png",
                 "value": "3280 + 460 Crystal",
-                "price": 640000
+                "price": 657300
               }
             ]
           }
