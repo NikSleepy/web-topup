@@ -64,7 +64,8 @@
               <div
                 class="w-72 h-10 flex justify-center items-center border rounded-md cursor-pointer"
                 :class="{
-                  'border-blue-500': selectedCategory['category'] === input,
+                  'border-blue-500 bg-[#12182C] ':
+                    selectedCategory['category'] === input,
                 }"
                 :key="input.id"
                 @click="selectedCategory['category'] = input"
@@ -74,20 +75,23 @@
             </div>
           </div>
 
+          
           <div
             v-show="label.type === 'sections'"
-            class="w-full h-auto flex flex-wrap gap-4"
+            class="w-full h-auto flex flex-wrap gap-4 mt-6"
           >
             <div
               v-for="option in selectedCategory.category?.options"
-              class="w-72 h-10 flex justify-center items-center border rounded-md cursor-pointer"
+              class="w-[22%] h-auto flex flex-col justify-center items-center border rounded-md cursor-pointer p-2 text-center text-sm"
               :class="{
-                'border-blue-500': formData['item'] === option.value,
+                'border-blue-500 bg-[#12182C] ':
+                  formData['item'] === option.value,
               }"
               :key="option.id"
               @click="inputItem(option)"
             >
               <p>{{ option.value }}</p>
+              <strong>{{ numberToRupiah(option.price) }}</strong>
             </div>
           </div>
         </div>
@@ -101,7 +105,8 @@
             <div
               class="w-[60%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
               :class="{
-                'border-blue-500': topup['type_payment'] === input,
+                'border-blue-500 bg-[#12182C]  ':
+                  topup['type_payment'] === input,
               }"
               :key="input.id"
               @click="topup['type_payment'] = input"
@@ -117,7 +122,8 @@
                 v-for="option in topup.type_payment?.options"
                 class="w-[20%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
                 :class="{
-                  'border-blue-500': formData['payment'] === option.value,
+                  'border-blue-500 bg-[#12182C]':
+                    formData['payment'] === option.value,
                 }"
                 :key="option.id"
                 @click="formData['payment'] = option.value"
@@ -135,7 +141,7 @@
 
       <div class="w-full flex justify-end">
         <button
-          class="w-[60%] h-10 flex justify-center items-center bg-yellow-400 rounded-md"
+          class="w-[40%] h-10 flex justify-center items-center bg-yellow-400 rounded-md"
           @click="openModal"
         >
           Order
@@ -154,7 +160,9 @@
           <li><strong>UID:</strong> {{ formData['uid'] }}</li>
           <li><strong>Server:</strong> {{ formData['server'] }}</li>
           <li><strong>Name:</strong> {{ formData['item'] }}</li>
-          <li><strong>Price:</strong> {{ numberToRupiah(formData['price']) }}</li>
+          <li>
+            <strong>Price:</strong> {{ numberToRupiah(formData['price']) }}
+          </li>
           <li><strong>Whatsapp:</strong> {{ formData['whatsapp'] }}</li>
           <li><strong>Methods Payment:</strong> {{ formData['payment'] }}</li>
           <li><strong>Total:</strong> {{ numberToRupiah(totalPrice()) }}</li>
@@ -180,7 +188,7 @@
 
 <script>
 import data from '@/mocks/inputTopup.json';
-import { numberToRupiah } from '~/utils/currency'; 
+import { numberToRupiah } from '~/utils/currency';
 
 export default {
   data() {

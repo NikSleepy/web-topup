@@ -1762,54 +1762,37 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "Points",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "475 Points",
+                "price": 53400
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
+                "value": "1000 Points",
+                "price": 114300
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "img": "crystal.png",
-            "name": "Crystal",
-            "options": [
-              {
-                "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "2050 Points",
+                "price": 226500
               },
               {
-                "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "img": "Blessing.png",
+                "value": "3650 Points",
+                "price": 393600
               },
               {
-                "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "img": "Blessing.png",
+                "value": "5360 Points",
+                "price": 565700
               },
               {
-                "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
-              },
-              {
-                "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "img": "Blessing.png",
+                "value": "11000 Points",
+                "price": 1123400
               }
             ]
           }
@@ -1931,223 +1914,64 @@
           {
             "id": 1,
             "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
+            "name": "Inter-knot Membership",
             "options": [
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
+                "value": "Inter-knot Membership",
+                "price": 71200
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
+                "value": "Inter-knot Membership",
+                "price": 142600
               },
               {
                 "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
+                "value": "Inter-knot Membership 3x",
+                "price": 213400
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Inter-knot Membership 4x",
+                "price": 285200
+              },
+              {
+                "img": "Blessing.png",
+                "value": "Inter-knot Membership 5x",
+                "price": 356600
               }
             ]
           },
           {
             "id": 2,
             "img": "crystal.png",
-            "name": "Crystal",
+            "name": "Monochromes",
             "options": [
               {
                 "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
+                "value": "60 Monochrome",
+                "price": 14300
               },
               {
                 "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
+                "value": "300 + 30 Monochrome",
+                "price": 71500
               },
               {
                 "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
+                "value": "980 + 110 Monochrome",
+                "price": 215000
               },
               {
                 "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
+                "value": "1980 + 260 Monochrome",
+                "price": 430400
               },
               {
                 "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "no": 3,
-        "label": "Jumlah Pembelian",
-        "type": "number",
-        "inputs": [
-          {
-            "id": "quantity",
-            "placeholder": "Jumlah Item",
-            "type": "number",
-            "required": true
-          }
-        ]
-      },
-      {
-        "no": 4,
-        "label": "Nomor Whatsapp",
-        "type": "text",
-        "inputs": [
-          {
-            "id": "whatsapp",
-            "placeholder": "+628xxxxxxx / 08xxxxxxx",
-            "type": "number",
-            "required": true
-          }
-        ]
-      },
-      {
-        "no": 5,
-        "label": "Metode Pembayaran",
-        "type": "payments",
-        "inputs": [
-          {
-            "id": "metode_pembayaran",
-            "name": "QR Code",
-            "options": [
-              {
-                "value": "QRIS"
-              }
-            ]
-          },
-          {
-            "id": "metode_pembayaran",
-            "name": "E-Wallet",
-            "options": [
-              {
-                "value": "Dana"
-              },
-              {
-                "value": "OVO"
-              }
-            ]
-          },
-          {
-            "id": "metode_pembayaran",
-            "name": "Virtual Account",
-            "options": [
-              {
-                "value": "BCA"
-              },
-              {
-                "value": "BNI"
-              },
-              {
-                "value": "Mandiri"
-              },
-              {
-                "value": "Permata"
-              }
-            ]
-          },
-          {
-            "id": "metode_pembayaran",
-            "name": "Retail Outlet",
-            "options": [
-              {
-                "value": "Indomaret"
-              },
-              {
-                "value": "Alfamart"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "name": "Solo Leveling",
-    "img": "solo-leveling.jpeg",
-    "orders": [
-      {
-        "no": 1,
-        "label": "Silahkan Masukan UID",
-        "type": "text",
-        "inputs": [
-          {
-            "id": "uid",
-            "placeholder": "User ID",
-            "required": true
-          },
-          {
-            "id": "server",
-            "placeholder": "Server",
-            "required": true
-          }
-        ]
-      },
-      {
-        "no": 2,
-        "label": "Silahkan Pilih Kategori & Item",
-        "type": "sections",
-        "inputs": [
-          {
-            "id": 1,
-            "img": "Blessing.png",
-            "name": "Blessing Welkin Moon",
-            "options": [
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon",
-                "price": 65000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 2x",
-                "price": 130000
-              },
-              {
-                "img": "Blessing.png",
-                "value": "Blessing Welkin Moon 3x",
-                "price": 195000
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "img": "crystal.png",
-            "name": "Crystal",
-            "options": [
-              {
-                "img": "crystal.png",
-                "value": "60 Crystal",
-                "price": 13000
-              },
-              {
-                "img": "crystal.png",
-                "value": "300 + 30 Crystal",
-                "price": 65000
-              },
-              {
-                "img": "crystal.png",
-                "value": "980 + 110 Crystal",
-                "price": 205000
-              },
-              {
-                "img": "crystal.png",
-                "value": "1980 + 260 Crystal",
-                "price": 410000
-              },
-              {
-                "img": "crystal.png",
-                "value": "3280 + 460 Crystal",
-                "price": 640000
+                "value": "3280 + 460 Monochrome",
+                "price": 713800
               }
             ]
           }
