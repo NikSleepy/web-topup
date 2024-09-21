@@ -28,21 +28,21 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "blessing-welkin-moon.png",
             "name": "Blessing Welkin Moon",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "blessing-welkin-moon.png",
                 "value": "Blessing Welkin Moon",
                 "price": 65000
               },
               {
-                "img": "Blessing.png",
+                "img": "blessing-welkin-moon.png",
                 "value": "Blessing Welkin Moon 2x",
                 "price": 130000
               },
               {
-                "img": "Blessing.png",
+                "img": "blessing-welkin-moon.png",
                 "value": "Blessing Welkin Moon 3x",
                 "price": 195000
               }
@@ -50,31 +50,31 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "crystal-genshin.png",
             "name": "Crystal",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "crystal-genshin.png",
                 "value": "60 Crystal",
                 "price": 13000
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-genshin.png",
                 "value": "300 + 30 Crystal",
                 "price": 65000
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-genshin.png",
                 "value": "980 + 110 Crystal",
                 "price": 205000
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-genshin.png",
                 "value": "1980 + 260 Crystal",
                 "price": 410000
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-genshin.png",
                 "value": "3280 + 460 Crystal",
                 "price": 640000
               }
@@ -197,16 +197,16 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "battlepass-wuwe.png",
             "name": "Battle Pass",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "battlepass-wuwe.png",
                 "value": "Insider Channel",
                 "price": 144500
               },
               {
-                "img": "Blessing.png",
+                "img": "battlepass-wuwe.png",
                 "value": "Upgrade Connoiseur Channel (Harus memiliki Insider Channel)",
                 "price": 159000
               }
@@ -214,31 +214,31 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "lunite-wuwe.jpg",
             "name": "Lunite",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "lunite-wuwe.jpg",
                 "value": "60 Lunite",
                 "price": 20000
               },
               {
-                "img": "crystal.png",
+                "img": "lunite-wuwe.jpg",
                 "value": "300 Lunite",
                 "price": 73000
               },
               {
-                "img": "crystal.png",
+                "img": "lunite-wuwe.jpg",
                 "value": "980 Lunite",
                 "price": 220000
               },
               {
-                "img": "crystal.png",
+                "img": "lunite-wuwe.jpg",
                 "value": "1980 Lunite",
                 "price": 439500
               },
               {
-                "img": "crystal.png",
+                "img": "lunite-wuwe.jpg",
                 "value": "3280 Lunite",
                 "price": 690500
               }
@@ -246,21 +246,21 @@
           },
           {
             "id": 3,
-            "img": "Blessing.png",
+            "img": "lunite-subscribetion-wuwe.jpg",
             "name": "Lunites Subscription",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "lunite-subscribetion-wuwe.jpg",
                 "value": "Lunites Subscription",
                 "price": 75000
               },
               {
-                "img": "Blessing.png",
+                "img": "lunite-subscribetion-wuwe.jpg",
                 "value": "Lunites Subscription 2x",
                 "price": 149500
               },
               {
-                "img": "Blessing.png",
+                "img": "lunite-subscribetion-wuwe.jpg",
                 "value": "Lunites Subscription 3x",
                 "price": 219500
               }
@@ -383,16 +383,16 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "Twilight-Pass-ml.jpeg",
             "name": "Twilight Pass",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "Twilight-Pass-ml.jpeg",
                 "value": "Twilight Pass",
                 "price": 152000
               },
               {
-                "img": "Blessing.png",
+                "img": "Twilight-Pass-ml.jpeg",
                 "value": "Twilight Pass 2x",
                 "price": 304000
               }
@@ -400,71 +400,71 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "diamonds-ml.png",
             "name": "Diamonds",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "5 Diamonds",
                 "price": 1400
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "10 Diamonds",
                 "price": 3100
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "12 Diamonds",
                 "price": 3500
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "28 Diamonds",
                 "price": 8100
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "44 Diamonds",
                 "price": 12500
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "113 Diamonds",
                 "price": 31200
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "170 Diamonds",
                 "price": 47500
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "296 Diamonds",
                 "price": 81200
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "381 Diamonds",
                 "price": 106100
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "568 Diamonds",
                 "price": 152000
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "750 Diamonds",
                 "price": 210400
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "1164 Diamonds",
                 "price": 312700
               },
               {
-                "img": "crystal.png",
+                "img": "diamonds-ml.png",
                 "value": "2382 Diamonds",
                 "price": 612400
               }
@@ -587,21 +587,21 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "express-supply-pass-hsr.jpeg",
             "name": "Express Supply Pass",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "express-supply-pass-hsr.jpeg",
                 "value": "Express Supply Pass",
                 "price": 64000
               },
               {
-                "img": "Blessing.png",
+                "img": "express-supply-pass-hsr.jpeg",
                 "value": "Express Supply Pass 2x",
                 "price": 126000
               },
               {
-                "img": "Blessing.png",
+                "img": "express-supply-pass-hsr.jpeg",
                 "value": "Express Supply Pass 3x",
                 "price": 190500
               }
@@ -609,31 +609,31 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "oneiric-shard.jpeg",
             "name": "Oneiric Shards",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "oneiric-shard.jpeg",
                 "value": "60 Oneiric Shards",
                 "price": 14000
               },
               {
-                "img": "crystal.png",
+                "img": "oneiric-shard.jpeg",
                 "value": "300 + 30 Oneiric Shards",
                 "price": 64000
               },
               {
-                "img": "crystal.png",
+                "img": "oneiric-shard.jpeg",
                 "value": "980 + 110 Oneiric Shards",
                 "price": 190000
               },
               {
-                "img": "crystal.png",
+                "img": "oneiric-shard.jpeg",
                 "value": "1980 + 260  Oneiric Shards",
                 "price": 413000
               },
               {
-                "img": "crystal.png",
+                "img": "oneiric-shard.jpeg",
                 "value": "3280 + 460 Oneiric Shards",
                 "price": 636000
               }
@@ -756,31 +756,31 @@
         "inputs": [
           {
             "id": 1,
-            "img": "crystal.png",
+            "img": "cp-codm.png",
             "name": "Cp",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "cp-codm.png",
                 "value": "63 Cp",
                 "price": 10500
               },
               {
-                "img": "crystal.png",
+                "img": "cp-codm.png",
                 "value": "321 Cp",
                 "price": 51700
               },
               {
-                "img": "crystal.png",
+                "img": "cp-codm.png",
                 "value": "654 Cp",
                 "price": 106700
               },
               {
-                "img": "crystal.png",
+                "img": "cp-codm.png",
                 "value": "1308 Cp",
                 "price": 206000
               },
               {
-                "img": "crystal.png",
+                "img": "cp-codm.png",
                 "value": "3280 Cp",
                 "price": 517800
               }
@@ -903,21 +903,21 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "bp-mingguan.jpg",
             "name": "Membership",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "bp-mingguan.jpg",
                 "value": "Level Up Pass",
                 "price": 14500
               },
               {
-                "img": "Blessing.png",
+                "img": "bp-mingguan.jpg",
                 "value": "Mingguan Membership",
                 "price": 26900
               },
               {
-                "img": "Blessing.png",
+                "img": "bp-bulanan.jpg",
                 "value": "Bulanan Membership",
                 "price": 80600
               }
@@ -925,61 +925,61 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "diamond-ff.jpg",
             "name": "Diamonds",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "5 Diamonds",
                 "price": 800
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "10 Diamonds",
                 "price": 1700
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "12 Diamonds",
                 "price": 2000
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "70 Diamonds",
                 "price": 8100
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "144 Diamonds",
                 "price": 19500
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "190 Diamonds",
                 "price": 28400
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "355 Diamonds",
                 "price": 46600
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "565 Diamonds",
                 "price": 71800
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "750 Diamonds",
                 "price": 96500
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "1164 Diamonds",
                 "price": 130700
               },
               {
-                "img": "crystal.png",
+                "img": "diamond-ff.jpg",
                 "value": "2382 Diamonds",
                 "price": 245500
               }
@@ -1102,16 +1102,16 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "rp-pubg.png",
             "name": "Upgrade Rp",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "rp-pubg.png",
                 "value": "Upgrade Rp",
                 "price": 149700
               },
               {
-                "img": "Blessing.png",
+                "img": "rp-pubg.png",
                 "value": "Upgrade Elite Rp",
                 "price": 383400
               }
@@ -1119,41 +1119,41 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "uc-pubg.png",
             "name": "UC",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "30 UC",
                 "price": 6500
               },
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "60 UC",
                 "price": 13400
               },
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "210 UC",
                 "price": 46500
               },
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "360 + 20 UC",
                 "price": 80200
               },
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "660 + 40 UC",
                 "price": 144700
               },
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "900 + 60 UC",
                 "price": 200600
               },
               {
-                "img": "crystal.png",
+                "img": "uc-pubg.png",
                 "value": "1500 + 80 UC",
                 "price": 334700
               }
@@ -1276,16 +1276,16 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "wekly-pass-hok.jpeg",
             "name": "Weekly Card",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "wekly-pass-hok.jpeg",
                 "value": "Weekly Card",
                 "price": 14000
               },
               {
-                "img": "Blessing.png",
+                "img": "wekly-pass-plus-hok.jpg",
                 "value": "Weekly Card Plus",
                 "price": 41300
               }
@@ -1293,33 +1293,48 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "token-hok.png",
             "name": "Tokens",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "token-hok.png",
                 "value": "8 Tokens",
                 "price": 1300
               },
               {
-                "img": "crystal.png",
+                "img": "token-hok.png",
                 "value": "23 + 3 Tokens",
                 "price": 3900
               },
               {
-                "img": "crystal.png",
+                "img": "token-hok.png",
                 "value": "80 + 20 Tokens",
                 "price": 16000
               },
               {
-                "img": "crystal.png",
+                "img": "token-hok.png",
                 "value": "240 + 17 Tokens",
                 "price": 44000
               },
               {
-                "img": "crystal.png",
+                "img": "token-hok.png",
                 "value": "560 + 40 Tokens",
                 "price": 99700
+              },
+              {
+                "img": "token-hok.png",
+                "value": "1200 + 40 Tokens",
+                "price": 266000
+              },
+              {
+                "img": "token-hok.png",
+                "value": "2400 + 40 Tokens",
+                "price": 532000
+              },
+              {
+                "img": "token-hok.png",
+                "value": "4800 + 40 Tokens",
+                "price": 1064000
               }
             ]
           }
@@ -1440,31 +1455,31 @@
         "inputs": [
           {
             "id": 1,
-            "img": "crystal.png",
+            "img": "wildcore-lol.png",
             "name": "Wildcores",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "wildcore-lol.png",
                 "value": "100 Wildcores",
                 "price": 14500
               },
               {
-                "img": "crystal.png",
+                "img": "wildcore-lol.png",
                 "value": "305 + 50 Wildcores",
                 "price": 65900
               },
               {
-                "img": "crystal.png",
+                "img": "wildcore-lol.png",
                 "value": "586 + 100 Wildcores",
                 "price": 101100
               },
               {
-                "img": "crystal.png",
+                "img": "wildcore-lol.png",
                 "value": "1100 Wildcores",
                 "price": 154000
               },
               {
-                "img": "crystal.png",
+                "img": "wildcore-lol.png",
                 "value": "3100 + 100 Wildcores",
                 "price": 387900
               }
@@ -1587,26 +1602,26 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "b-chip-hi.jpg",
             "name": "B Chips",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "b-chip-hi.jpg",
                 "value": "65 B Chips",
                 "price": 17600
               },
               {
-                "img": "Blessing.png",
+                "img": "b-chip-hi.jpg",
                 "value": "330 + 65 B Chips",
                 "price": 97900
               },
               {
-                "img": "Blessing.png",
+                "img": "b-chip-hi.jpg",
                 "value": "710 + 65 B Chips",
                 "price": 183200
               },
               {
-                "img": "Blessing.png",
+                "img": "b-chip-hi.jpg",
                 "value": "1520 + 65 B Chips",
                 "price": 345600
               }
@@ -1614,31 +1629,31 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "crystal-hi.png",
             "name": "Crystals",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "crystal-hi.png",
                 "value": "60 Crystals",
                 "price": 17000
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-hi.png",
                 "value": "300 + 30 Crystal",
                 "price": 65100
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-hi.png",
                 "value": "980 + 110 Crystal",
                 "price": 206000
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-hi.png",
                 "value": "1980 + 260 Crystal",
                 "price": 415400
               },
               {
-                "img": "crystal.png",
+                "img": "crystal-hi.png",
                 "value": "3280 + 460 Crystal",
                 "price": 657300
               }
@@ -1761,36 +1776,36 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "points-valo.png",
             "name": "Points",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "points-valo.png",
                 "value": "475 Points",
                 "price": 53400
               },
               {
-                "img": "Blessing.png",
+                "img": "points-valo.png",
                 "value": "1000 Points",
                 "price": 114300
               },
               {
-                "img": "Blessing.png",
+                "img": "points-valo.png",
                 "value": "2050 Points",
                 "price": 226500
               },
               {
-                "img": "Blessing.png",
+                "img": "points-valo.png",
                 "value": "3650 Points",
                 "price": 393600
               },
               {
-                "img": "Blessing.png",
+                "img": "points-valo.png",
                 "value": "5360 Points",
                 "price": 565700
               },
               {
-                "img": "Blessing.png",
+                "img": "points-valo.png",
                 "value": "11000 Points",
                 "price": 1123400
               }
@@ -1913,31 +1928,31 @@
         "inputs": [
           {
             "id": 1,
-            "img": "Blessing.png",
+            "img": "membership-zzz.jpeg",
             "name": "Inter-knot Membership",
             "options": [
               {
-                "img": "Blessing.png",
+                "img": "membership-zzz.jpeg",
                 "value": "Inter-knot Membership",
                 "price": 71200
               },
               {
-                "img": "Blessing.png",
+                "img": "membership-zzz.jpeg",
                 "value": "Inter-knot Membership",
                 "price": 142600
               },
               {
-                "img": "Blessing.png",
+                "img": "membership-zzz.jpeg",
                 "value": "Inter-knot Membership 3x",
                 "price": 213400
               },
               {
-                "img": "Blessing.png",
+                "img": "membership-zzz.jpeg",
                 "value": "Inter-knot Membership 4x",
                 "price": 285200
               },
               {
-                "img": "Blessing.png",
+                "img": "membership-zzz.jpeg",
                 "value": "Inter-knot Membership 5x",
                 "price": 356600
               }
@@ -1945,31 +1960,31 @@
           },
           {
             "id": 2,
-            "img": "crystal.png",
+            "img": "monochrome-zzz.jpeg",
             "name": "Monochromes",
             "options": [
               {
-                "img": "crystal.png",
+                "img": "monochrome-zzz.jpeg",
                 "value": "60 Monochrome",
                 "price": 14300
               },
               {
-                "img": "crystal.png",
+                "img": "monochrome-zzz.jpeg",
                 "value": "300 + 30 Monochrome",
                 "price": 71500
               },
               {
-                "img": "crystal.png",
+                "img": "monochrome-zzz.jpeg",
                 "value": "980 + 110 Monochrome",
                 "price": 215000
               },
               {
-                "img": "crystal.png",
+                "img": "monochrome-zzz.jpeg",
                 "value": "1980 + 260 Monochrome",
                 "price": 430400
               },
               {
-                "img": "crystal.png",
+                "img": "monochrome-zzz.jpeg",
                 "value": "3280 + 460 Monochrome",
                 "price": 713800
               }

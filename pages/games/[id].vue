@@ -27,7 +27,6 @@
           </p>
         </div>
 
-        <div>{{ formData }}</div>
       </div>
     </div>
     <div class="w-[55%] flex flex-col p-4 items-center justify-center gap-6">
@@ -49,7 +48,11 @@
           class="flex flex-wrap gap-4 h-auto"
           :class="label.type !== 'sections' && 'flex-col'"
         >
-          <div v-for="input in label.inputs" class="flex">
+          <div
+            v-for="input in label.inputs"
+            class="w-full flex"
+            :class="label.type == 'sections' && 'w-[25%]'"
+          >
             <input
               v-if="label.type !== 'sections'"
               :type="label.type"
@@ -60,22 +63,23 @@
               class="w-full h-10 flex p-2 rounded-md text-black"
             />
 
-            <div v-else class="w-full h-auto flex flex-col gap-2">
-              <div
-                class="w-72 h-10 flex justify-center items-center border rounded-md cursor-pointer"
-                :class="{
-                  'border-blue-500 bg-[#12182C] ':
-                    selectedCategory['category'] === input,
-                }"
-                :key="input.id"
-                @click="selectedCategory['category'] = input"
-              >
-                <p>{{ input.name }}</p>
+            <div
+              v-else
+              class="w-auto h-auto flex flex-col justify-center items-center text-center gap-2 border rounded-md cursor-pointer p-2"
+              :class="{
+                'border-blue-500 bg-[#12182C] ':
+                  selectedCategory['category'] === input,
+              }"
+              :key="input.id"
+              @click="selectedCategory['category'] = input"
+            >
+              <div class="w-[60%] flex justify-center items-center mt-2">
+                <img :src="`/icons/${input.img}`" alt="icons" class="rounded-md"/>
               </div>
+              <p>{{ input.name }}</p>
             </div>
           </div>
 
-          
           <div
             v-show="label.type === 'sections'"
             class="w-full h-auto flex flex-wrap gap-4 mt-6"
@@ -90,6 +94,9 @@
               :key="option.id"
               @click="inputItem(option)"
             >
+              <div class="w-[60%] flex justify-center items-center my-2">
+                <img :src="`/icons/${option.img}`" alt="icons" class="rounded-md"/>
+              </div>
               <p>{{ option.value }}</p>
               <strong>{{ numberToRupiah(option.price) }}</strong>
             </div>
