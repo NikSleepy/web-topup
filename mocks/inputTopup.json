@@ -1960,31 +1960,31 @@
           },
           {
             "id": 2,
-            "img": "monochrome-zzz.jpeg",
+            "img": "monochrome-zzz.png",
             "name": "Monochromes",
             "options": [
               {
-                "img": "monochrome-zzz.jpeg",
+                "img": "monochrome-zzz.png",
                 "value": "60 Monochrome",
                 "price": 14300
               },
               {
-                "img": "monochrome-zzz.jpeg",
+                "img": "monochrome-zzz.png",
                 "value": "300 + 30 Monochrome",
                 "price": 71500
               },
               {
-                "img": "monochrome-zzz.jpeg",
+                "img": "monochrome-zzz.png",
                 "value": "980 + 110 Monochrome",
                 "price": 215000
               },
               {
-                "img": "monochrome-zzz.jpeg",
+                "img": "monochrome-zzz.png",
                 "value": "1980 + 260 Monochrome",
                 "price": 430400
               },
               {
-                "img": "monochrome-zzz.jpeg",
+                "img": "monochrome-zzz.png",
                 "value": "3280 + 460 Monochrome",
                 "price": 713800
               }

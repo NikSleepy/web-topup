@@ -26,7 +26,6 @@
             dari kami!
           </p>
         </div>
-
       </div>
     </div>
     <div class="w-[55%] flex flex-col p-4 items-center justify-center gap-6">
@@ -50,8 +49,8 @@
         >
           <div
             v-for="input in label.inputs"
-            class="w-full flex"
-            :class="label.type == 'sections' && 'w-[25%]'"
+            class="flex"
+            :class="label.type == 'sections' ? 'w-[20%]' : 'w-full'"
           >
             <input
               v-if="label.type !== 'sections'"
@@ -65,7 +64,7 @@
 
             <div
               v-else
-              class="w-auto h-auto flex flex-col justify-center items-center text-center gap-2 border rounded-md cursor-pointer p-2"
+              class="w-full h-auto flex flex-col justify-center items-center text-center gap-2 border rounded-md cursor-pointer p-2"
               :class="{
                 'border-blue-500 bg-[#12182C] ':
                   selectedCategory['category'] === input,
@@ -74,7 +73,11 @@
               @click="selectedCategory['category'] = input"
             >
               <div class="w-[60%] flex justify-center items-center mt-2">
-                <img :src="`/icons/${input.img}`" alt="icons" class="rounded-md"/>
+                <img
+                  :src="`/icons/${input.img}`"
+                  alt="icons"
+                  class="rounded-md"
+                />
               </div>
               <p>{{ input.name }}</p>
             </div>
@@ -95,7 +98,11 @@
               @click="inputItem(option)"
             >
               <div class="w-[60%] flex justify-center items-center my-2">
-                <img :src="`/icons/${option.img}`" alt="icons" class="rounded-md"/>
+                <img
+                  :src="`/icons/${option.img}`"
+                  alt="icons"
+                  class="rounded-md"
+                />
               </div>
               <p>{{ option.value }}</p>
               <strong>{{ numberToRupiah(option.price) }}</strong>
@@ -161,18 +168,50 @@
       v-if="isModalOpen"
       class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
     >
-      <div class="bg-yellow-400 text-black p-6 rounded-lg shadow-lg w-[50%]">
+      <div class="bg-yellow-400 text-black p-6 rounded-lg shadow-lg w-[25%]">
         <h2 class="text-2xl font-bold mb-4">Order Confirmation</h2>
-        <ul class="mb-4">
-          <li><strong>UID:</strong> {{ formData['uid'] }}</li>
-          <li><strong>Server:</strong> {{ formData['server'] }}</li>
-          <li><strong>Name:</strong> {{ formData['item'] }}</li>
+        <ul class="mb-4 flex flex-col gap-2">
           <li>
-            <strong>Price:</strong> {{ numberToRupiah(formData['price']) }}
+            <div class="w-full flex justify-between">
+              <strong>UID:</strong> {{ formData['uid'] }}
+            </div>
           </li>
-          <li><strong>Whatsapp:</strong> {{ formData['whatsapp'] }}</li>
-          <li><strong>Methods Payment:</strong> {{ formData['payment'] }}</li>
-          <li><strong>Total:</strong> {{ numberToRupiah(totalPrice()) }}</li>
+          <li>
+            <div class="w-full flex justify-between">
+              <strong>Server:</strong> {{ formData['server'] }}
+            </div>
+          </li>
+          <li>
+            <div class="w-full flex justify-between">
+              <strong>Name:</strong> {{ formData['item'] }}
+            </div>
+          </li>
+          <li>
+            <div class="w-full flex justify-between">
+              <strong>Price:</strong> {{ numberToRupiah(formData['price']) }}
+            </div>
+          </li>
+          <li>
+            <div class="w-full flex justify-between">
+              <strong>Quantity:</strong> {{ formData['quantity'] }}
+            </div>
+          </li>
+          <li>
+            <div class="w-full flex justify-between">
+              <strong>Whatsapp:</strong> {{ formData['whatsapp'] }}
+            </div>
+          </li>
+          <li>
+            <div class="w-full flex justify-between">
+              <strong>Methods Payment:</strong> {{ formData['payment'] }}
+            </div>
+          </li>
+          <li>
+            <div class="w-full flex justify-between border-t-2 border-black">
+              <strong>Total:</strong>
+              <strong>{{ numberToRupiah(totalPrice()) }}</strong>
+            </div>
+          </li>
         </ul>
         <div class="flex justify-end gap-4">
           <button
