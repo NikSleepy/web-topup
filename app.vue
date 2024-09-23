@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen bg-[#12182C] overflow-hidden">
+  <div class="w-screen h-auto bg-[#12182C] overflow-hidden">
     <nav
       class="w-full h-20 flex justify-between items-center px-32 bg-[#162140] z-50"
     >
@@ -52,19 +52,19 @@
             class="absolute right-0 mt-2 w-48 bg-[#20305d] text-white rounded-lg shadow-lg py-2 z-50"
           >
             <a
-              href="#"
+              href="/"
               class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
               @click="goToProfile"
               >Profil</a
             >
             <a
-              href="#"
+              href="/"
               class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
               @click="goToOrderHistory"
               >Riwayat Pesanan</a
             >
             <a
-              href="#"
+              href="/"
               class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
               @click="logout"
               >Logout</a
@@ -78,6 +78,48 @@
         <NuxtPage />
       </NuxtLayout>
     </div>
+    <footer class="w-full h-auto text-white text-lg">
+      <div class="w-full h-auto bg-[#162140] flex justify-between py-10 px-32">
+        <div class="w-[45%] grid gap-4">
+          <P class="font-semibold">PT. Nikri Jaya Abadi</P>
+          <p>Platform Top Up Game, Cepat dan Terpercaya</p>
+          <p>Jl. Sasakpanjang No. 9, Teknogoli, Depok, Jawa Barat</p>
+          <p class="mt-8">
+            Copyright © 2023 PT. Nikri Jaya Abadi -
+            <span class="text-yellow-300">NikTop Official.</span> All rights
+            reserved.
+          </p>
+        </div>
+        <div class="w-[50%]">
+          <strong>Informasi</strong>
+
+          <div class="flex gap-10 mt-4">
+            <div class="w-[20%]">
+              <a href="/" class="block mt-2">Tentang Kami</a>
+              <a href="/" class="block mt-2">Kebijakan Privasi</a>
+              <a href="/" class="block mt-2">Kontak Kami</a>
+            </div>
+            <div class="w-[20%]">
+              <a href="/" class="block mt-2">FAQ</a>
+              <a href="/" class="block mt-2">Syarat dan Ketentuan</a>
+              <a href="/" class="block mt-2">Hubungi Kami</a>
+            </div>
+            <div class="w-[20%]">
+              <a href="/" class="block mt-2">Blog</a>
+              <a href="/" class="block mt-2">Kebijakan Layanan</a>
+            </div>
+            <div class="w-[20%]">
+              <img
+                src="/icons/customer-service.png"
+                alt="customer"
+                class="w-full transition hover:scale-110 ease-in-out duration-300 delay-150 cursor-pointer"
+                @click="waMe"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -110,5 +152,9 @@ const logout = () => {
 
 const goToHome = () => {
   router.push('/');
+};
+
+const waMe = () => {
+  window.open('https://wa.me/628986969322');
 };
 </script>
