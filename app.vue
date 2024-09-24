@@ -81,7 +81,7 @@
     <footer class="w-full h-auto text-white text-lg">
       <div class="w-full h-auto bg-[#162140] flex justify-between py-10 px-32">
         <div class="w-[45%] grid gap-4">
-          <P class="font-semibold">PT. Nikri Jaya Abadi</P>
+          <p class="font-semibold">PT. Nikri Jaya Abadi</p>
           <p>Platform Top Up Game, Cepat dan Terpercaya</p>
           <p>Jl. Sasakpanjang No. 9, Teknogoli, Depok, Jawa Barat</p>
           <p class="mt-8">

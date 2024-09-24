@@ -5,7 +5,7 @@
         class="w-full h-auto flex flex-col items-center px-4 gap-4 bg-[#3B4158] mt-4 rounded-md py-6"
       >
         <img
-          :src="`/icons/${item.img}`"
+          :src="`/icons/${item?.img}`"
           alt="icon"
           class="w-[60%] h-auto rounded-md"
         />
@@ -49,6 +49,7 @@
         >
           <div
             v-for="input in label.inputs"
+            :key="input.id"
             class="flex"
             :class="label.type == 'sections' ? 'w-[20%]' : 'w-full'"
           >
@@ -69,12 +70,12 @@
                 'border-blue-500 bg-[#12182C] ':
                   selectedCategory['category'] === input,
               }"
-              :key="input.id"
+              
               @click="selectedCategory['category'] = input"
             >
               <div class="w-[60%] flex justify-center items-center mt-2">
                 <img
-                  :src="`/icons/${input.img}`"
+                  :src="`/icons/${input?.img}`"
                   alt="icons"
                   class="rounded-md"
                 />
@@ -99,7 +100,7 @@
             >
               <div class="w-[60%] flex justify-center items-center my-2">
                 <img
-                  :src="`/icons/${option.img}`"
+                  :src="`/icons/${option?.img}`"
                   alt="icons"
                   class="rounded-md"
                 />
@@ -114,6 +115,7 @@
         <div v-else class="flex flex-col gap-4 h-auto">
           <div
             v-for="input in label.inputs"
+            :key="input.id"
             class="w-full h-auto flex flex-wrap gap-2"
           >
             <div
@@ -122,7 +124,6 @@
                 'border-blue-500 bg-[#12182C]  ':
                   topup['type_payment'] === input,
               }"
-              :key="input.id"
               @click="topup['type_payment'] = input"
             >
               <p>{{ input.name }}</p>
@@ -134,12 +135,12 @@
             >
               <div
                 v-for="option in topup.type_payment?.options"
+                :key="option.id"
                 class="w-[20%] h-10 flex justify-center items-center border rounded-md cursor-pointer"
                 :class="{
                   'border-blue-500 bg-[#12182C]':
                     formData['payment'] === option.value,
                 }"
-                :key="option.id"
                 @click="formData['payment'] = option.value"
               >
                 <p>{{ option.value }}</p>
@@ -234,7 +235,7 @@
 
 <script>
 import data from '@/mocks/inputTopup.json';
-import { numberToRupiah } from '~/utils/currency';
+import { numberToRupiah } from '../../utils/currency';
 
 export default {
   data() {
@@ -298,8 +299,12 @@ export default {
       this.isModalOpen = false;
     },
     order() {
-      this.isModalOpen = false;
-      this.$router.push('/');
+      try {
+        this.isModalOpen = false;
+        this.$router.push('/');
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
     },
     validateForm() {
       // Cek apakah input di formData kosong
