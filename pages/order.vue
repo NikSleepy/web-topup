@@ -19,23 +19,47 @@
           <th class="border border-gray-500 px-4 py-2 bg-yellow-400">Status</th>
         </tr>
       </thead>
-      <tbody class="text-center">
-        <tr>
-          <td class="border border-gray-500 px-4 py-2"></td>
-          <td class="border border-gray-500 px-4 py-2"></td>
-          <td class="border border-gray-500 px-4 py-2"></td>
-          <td class="border border-gray-500 px-4 py-2"></td>
-          <td class="border border-gray-500 px-4 py-2"></td>
-          <td class="border border-gray-500 px-4 py-2"></td>
+      <tbody class="text-center text-md">
+        <tr v-for="( item, index ) in data">
+          <td class="border border-gray-500 px-4 py-2">{{ index + 1 }}</td>
+          <td class="border border-gray-500 px-4 py-2">{{ item.item }}</td>
+          <td class="border border-gray-500 px-4 py-2">{{ numberToRupiah(item.price) }}</td>
+          <td class="border border-gray-500 px-4 py-2">{{ item.quantity }}</td>
+          <td class="border border-gray-500 px-4 py-2">{{ item.payment }}</td>
+          <td class="border border-gray-500 px-4 py-2">{{ numberToRupiah( item.price * item.quantity) }}</td>
           <td class="border border-gray-500 px-4 py-2">
-            <button class="bg-red-500 px-2 py-1 rounded-lg">on process</button>
+            <button class="bg-green-500 px-2 py-1 rounded-lg">Success</button>
           </td>
         </tr>
       </tbody>
     </table>
 
-    <div></div>
+    <!-- <div>{{ data }}</div> -->
   </div>
 </template>
-<script setup></script>
+<script setup>
+
+import axios from 'axios';
+import { numberToRupiah } from '../utils/currency';
+
+
+const user = {
+  id: 5
+}
+const orderGame = async ( data ) => {
+  try {
+    const response = await axios.post('http://localhost:5000/api/orders', data);
+    return response.data.data;
+  } catch (error) {
+    console.log({
+      message: 'gagal fetch data',
+      error: error,
+      data: data
+    })
+  }
+}
+
+const data = await orderGame(user);
+
+</script>
 <style></style>

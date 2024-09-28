@@ -12,7 +12,7 @@
         @click="orderGame(item.id)"
       >
         <img
-          :src="`/icons/${item.img}`"
+          :src="`/icons/${item?.img}`"
           alt="wuwe"
           class="w-full h-full bg-cover bg-center rounded-md cursor-pointer"
         />

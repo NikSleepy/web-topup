@@ -236,6 +236,7 @@
 <script>
 import data from '@/mocks/inputTopup.json';
 import { numberToRupiah } from '../../utils/currency';
+import axios from 'axios';
 
 export default {
   data() {
@@ -298,9 +299,11 @@ export default {
     closeModal() {
       this.isModalOpen = false;
     },
-    order() {
+    async order() {
       try {
         this.isModalOpen = false;
+        const response = await axios.post('http://localhost:5000/api/orders', this.formData);
+        console.log(response.data.data);
         this.$router.push('/');
       } catch (error) {
         console.error('Error submitting form:', error);
