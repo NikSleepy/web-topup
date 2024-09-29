@@ -54,19 +54,16 @@
             <a
               href="/"
               class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
-              @click="goToProfile"
               >Profil</a
             >
             <a
-              href="/"
+              href="/order"
               class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
-              @click="goToOrderHistory"
               >Riwayat Pesanan</a
             >
             <a
-              href="/"
+              href="/login"
               class="block px-4 py-2 hover:bg-white hover:text-[#162140]"
-              @click="logout"
               >Logout</a
             >
           </div>
@@ -134,20 +131,6 @@ const router = useRouter();
 
 const toggleDropdown = () => {
   dropdownOpen.value = !dropdownOpen.value;
-};
-
-const goToProfile = () => {
-  dropdownOpen.value = false;
-  router.push('/profile');
-};
-const goToOrderHistory = () => {
-  dropdownOpen.value = false;
-  router.push('/order-history');
-};
-
-const logout = () => {
-  dropdownOpen.value = false;
-  // Tambahkan logika logout di sini
 };
 
 const goToHome = () => {
