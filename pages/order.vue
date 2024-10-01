@@ -20,13 +20,17 @@
         </tr>
       </thead>
       <tbody class="text-center text-md">
-        <tr v-for="( item, index ) in data">
+        <tr v-for="(item, index) in data">
           <td class="border border-gray-500 px-4 py-2">{{ index + 1 }}</td>
           <td class="border border-gray-500 px-4 py-2">{{ item.item }}</td>
-          <td class="border border-gray-500 px-4 py-2">{{ numberToRupiah(item.price) }}</td>
+          <td class="border border-gray-500 px-4 py-2">
+            {{ numberToRupiah(item.price) }}
+          </td>
           <td class="border border-gray-500 px-4 py-2">{{ item.quantity }}</td>
           <td class="border border-gray-500 px-4 py-2">{{ item.payment }}</td>
-          <td class="border border-gray-500 px-4 py-2">{{ numberToRupiah( item.price * item.quantity) }}</td>
+          <td class="border border-gray-500 px-4 py-2">
+            {{ numberToRupiah(item.price * item.quantity) }}
+          </td>
           <td class="border border-gray-500 px-4 py-2">
             <button class="bg-green-500 px-2 py-1 rounded-lg">Success</button>
           </td>
@@ -38,28 +42,30 @@
   </div>
 </template>
 <script setup>
-
 import axios from 'axios';
 import { numberToRupiah } from '../utils/currency';
 
+const data = ref([]);
 
-const user = {
-  id: 5
-}
-const orderGame = async ( data ) => {
+const orderGame = async () => {
   try {
-    const response = await axios.post('http://localhost:5000/api/orders', data);
-    return response.data.data;
+    const response = await axios.get('http://localhost:5000/api/orders', {
+      withCredentials: true,
+    });
+
+    data.value = response.data.data;
   } catch (error) {
     console.log({
-      message: 'gagal fetch data',
-      error: error,
-      data: data
-    })
+      message: 'gagal fetch data di order page',
+    });
+    if (error.response.status === 404) {
+      window.location.href = '/login';
+    }
   }
-}
+};
 
-const data = await orderGame(user);
-
+onMounted(() => {
+  orderGame();
+});
 </script>
 <style></style>

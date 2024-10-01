@@ -33,12 +33,29 @@
 </template>
 <script setup>
     import { ref } from 'vue';
+    import axios from 'axios';
+    import { useRouter } from 'vue-router';
 
     const email = ref('');
     const password = ref('');
+    const router = useRouter();
 
-    const handleLogin = () => {
-        console.log(email.value, password.value);
+    const handleLogin = async () => {
+        try {
+          const response = await axios.post('http://localhost:5000/api/login', {
+            email: email.value,
+            password: password.value
+          }, {
+            withCredentials: true
+          });
+
+          router.push('/');
+        } catch (error) {
+          console.log({
+            message: 'gagal fetch data',
+            error: error
+          })
+        }
     };
 
 </script>
