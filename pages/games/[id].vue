@@ -70,7 +70,6 @@
                 'border-blue-500 bg-[#12182C] ':
                   selectedCategory['category'] === input,
               }"
-              
               @click="selectedCategory['category'] = input"
             >
               <div class="w-[60%] flex justify-center items-center mt-2">
@@ -255,6 +254,7 @@ export default {
     this.item = data[id - 1];
     this.index = id;
     console.log(this.formData);
+    this.validateUser();
   },
   watch: {
     formData: {
@@ -302,7 +302,20 @@ export default {
     async order() {
       try {
         this.isModalOpen = false;
-        const response = await axios.post('http://localhost:5000/api/orders', this.formData);
+        const response = await axios.post(
+          'http://localhost:5000/api/order',
+          {
+            uid: this.formData['uid'],
+            server: this.formData['server'],
+            item: this.formData['item'],
+            price: this.formData['price'],
+            quantity: this.formData['quantity'],
+            whatshapp: this.formData['whatsapp'],
+            payment: this.formData['payment'],
+          }, {
+            withCredentials: true,
+          }
+        );
         console.log(response.data.data);
         this.$router.push('/');
       } catch (error) {
@@ -323,6 +336,22 @@ export default {
       }
 
       return true; // Semua input terisi
+    },
+    async validateUser() {
+      try {
+        const response = await axios.get('http://localhost:5000/api/verifyToken', {
+          withCredentials: true,
+        });
+
+        console.log(response.data.data);
+      } catch (error) {
+        console.log({
+          message: 'gagal fetch data di order page',
+        });
+        if (error.response.status === 404) {
+          window.location.href = '/login';
+        }
+      }
     },
   },
 };
