@@ -1,7 +1,7 @@
 <template>
   <div class="w-screen h-auto bg-[#12182C] overflow-hidden">
     <nav
-      class="w-full h-20 flex justify-between items-center px-32 bg-[#162140] z-50"
+      class="w-full h-20 flex justify-between items-center px-32 bg-[#162140] z-50 fixed "
     >
       <div class="h-full w-[58%] flex justify-between items-center">
         <div
@@ -70,7 +70,7 @@
         </div>
       </div>
     </nav>
-    <div class="w-full h-auto">
+    <div class="w-full h-auto mt-28">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
